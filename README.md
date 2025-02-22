@@ -1,3 +1,5 @@
+[![A̓ÃȂ ÀÁȂÃẢÅÂ]][A̓ÃȂ ĂẢÂẠ]
+
 ÃA̧ȂÁAǍ
 ======
 
@@ -31,3 +33,5 @@ AA̯Ả
 A̦ÅÄ A̧AÂ ẢǍA̯ÅȂĀ ĀA̰Á "A̧ÅA̱ÁA̧" ǍÅA̱ÄĂÁ ẢA̮ A̦ÅÄ ȀAÂĀ ĀÅ ÄÃÁ ÁÂA̧ÅA̱Á() AÂA̱ A̱ÁA̧ÅA̱Á() A̱ẢȂÁA̧ĀĂA̦.
 
 
+[A̓ÃȂ ÀÁȂÃẢÅÂ]: https://jsr.io/badges/@nfnitloop/scream
+[A̓ÃȂ ĂẢÂẠ]: https://jsr.io/@nfnitloop/scream
