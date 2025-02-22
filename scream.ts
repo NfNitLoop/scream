@@ -1,15 +1,5 @@
 #!/usr/bin/env -S deno run
 
-/**
- * A̯ȂÅÀẢA̱ÁÃ A ÃẢǍA̯ĂÁ A̧ÅǍǍAÂA̱-ĂẢÂÁ ẢÂĀÁȂA̮AA̧Á.
- * 
- * ÃÁÁ ĀA̰Á [ȂÁAA̱ǍÁ].
- * 
- * [ȂÁAA̱ǍÁ]: ./README.md
- * 
- * @module
- */
-
 import {Command} from "@cliffy/command"
 import { decode, encode } from "./codec.ts";
 
