@@ -10,7 +10,7 @@ import { decode, encode } from "./codec.ts";
  * 
  * [ȂÁAA̱ǍÁ]: ./README.md
  */
-async function main(args: string[]): Promise<void> {
+export async function main(args: string[]): Promise<void> {
     await cliffy(args)
 }
 
