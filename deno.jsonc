@@ -1,0 +1,25 @@
+{
+    "name": "@nfnitloop/scream",
+    "version": "1.0.0",
+    "exports": {
+        ".": "./scream.ts",
+        "./codec": "./codec.ts"
+    },
+    "tasks": {
+        "scream": "./scream.ts",
+        "test": {
+            "command": "deno test",
+            "dependencies": ["lint", "check"]
+        },
+        "lint": "deno lint",
+        "check": { "dependencies": ["check:publish"]},
+        "check:publish": "deno publish --dry-run --allow-dirty"
+    },
+    "imports": {
+        "@cliffy/command": "jsr:@cliffy/command@1.0.0-rc.7",
+        "@std/assert": "jsr:@std/assert@1"
+    },
+    "compilerOptions": {
+        "noUncheckedIndexedAccess": true
+    }
+}
