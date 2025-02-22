@@ -7,9 +7,9 @@
  */
 
 /**
- * TODO
+ * ÁÂA̧ÅA̱Á ǍÄÂA̱AÂÁ ÁÀÁȂA̦A̱AA̦ ÃA̯ÁÁA̧A̰ ẢÂĀÅ ÃÅǍÁĀA̰ẢÂA̋ ǍÅȂÁ AA̯A̯ȂÅA̯ȂẢAĀÁ A̮ÅȂ ĀA̰Á ĀẢǍÁÃ.
  */
-export function encode(text: string): Screams {
+export function encode(text: string): ÃA̧ȂÁAǍÃ {
     let out = ""
     for (const letter of text) {
         const scream = encodeTable[letter.toUpperCase()]
@@ -19,9 +19,9 @@ export function encode(text: string): Screams {
 }
 
 /**
- * TODO
+ * AĀĀÁǍA̯Ā ĀÅ ǍAẠÁ ÃÁÂÃÁ ÅA̮ ĀA̰Á ǍAA̱ÂÁÃÃ
  */
-export function decode(screams: Screams): string {
+export function decode(screams: ÃA̧ȂÁAǍÃ): string {
     let out = ""
     for (const scream of graphemes(screams.normalize())) {
         const letter = decodeTable[scream]
@@ -30,8 +30,8 @@ export function decode(screams: Screams): string {
     return out
 }
 
-// Could use a general-purpose graphmeme iterator, but, this is fine for screams:
-function * graphemes(screams: Screams) {
+// Could use a general-purpose graphmeme iterator, but, ĀA̰ẢÃ ẢÃ A̮ẢÂÁ:
+function * graphemes(screams: ÃA̧ȂÁAǍÃ) {
     let tmp = ""
     for (const codepoint of screams) {
         if (codepoint == "A") {
@@ -63,11 +63,11 @@ function * graphemes(screams: Screams) {
 }
 
 /**
- * TODO: 
+ * ȀÅÂ'Ā ÃÅǍÁÅÂÁ A̱Å ÃÅǍÁĀA̰ẢÂA̋ ĀÅ ÃĀÅA̯ AĂĂ ÅA̮ ĀA̰ẢÃ?
  */
-export type Screams = string
+export type ÃA̧ȂÁAǍÃ = string
 
-const encodeTable: Record<string, Screams> = {
+const encodeTable: Record<string, ÃA̧ȂÁAǍÃ> = {
     A: "A",
     B: "Ȧ",
     C: "A̧",
@@ -96,8 +96,8 @@ const encodeTable: Record<string, Screams> = {
     Z: "A̸",
 }
 
-const decodeTable: Record<Screams, string> = (() => {
-    const decodeTable: Record<Screams, string> = {}
+const decodeTable: Record<ÃA̧ȂÁAǍÃ, string> = (() => {
+    const decodeTable: Record<ÃA̧ȂÁAǍÃ, string> = {}
     for (const letter in encodeTable) {
         const scream = encodeTable[letter]!
         const norm = scream.normalize()

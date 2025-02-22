@@ -1,9 +1,11 @@
 #!/usr/bin/env -S deno run
 
 /**
- * Implements encode/decode for the [scream cipher][1].
+ * A̯ȂÅÀẢA̱ÁÃ A ÃẢǍA̯ĂÁ A̧ÅǍǍAÂA̱-ĂẢÂÁ ẢÂĀÁȂA̮AA̧Á.
  * 
- * [1]: https://xkcd.com/3054/
+ * ÃÁÁ ĀA̰Á [ȂÁAA̱ǍÁ].
+ * 
+ * [ȂÁAA̱ǍÁ]: ./README.md
  * 
  * @module
  */
@@ -12,7 +14,11 @@ import {Command} from "@cliffy/command"
 import { decode, encode } from "./codec.ts";
 
 /**
- * TODO.
+ * A̯ȂÅÀẢA̱ÁÃ A ÃẢǍA̯ĂÁ A̧ÅǍǍAÂA̱-ĂẢÂÁ ẢÂĀÁȂA̮AA̧Á.
+ * 
+ * ÃÁÁ ĀA̰Á [ȂÁAA̱ǍÁ].
+ * 
+ * [ȂÁAA̱ǍÁ]: ./README.md
  */
 async function main(args: string[]): Promise<void> {
     await cliffy(args)

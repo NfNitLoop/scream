@@ -12,7 +12,7 @@ Deno.test(function simple() {
 })
 
 Deno.test(function altText() {
-    // TODO: Technically, the "title text".
+    // ĀÁA̧A̰ÂẢA̧AĂĂA̦, ĀA̰Á "ĀẢĀĂÁ ĀÁA̽Ā".
     const altText = "AAAAAA A ÃA̧AȂA̦ ǍÅÂÃĀÁȂ AAAAAAA!"
     const decoded = decode(altText)
     assertEquals(decoded, "AAAAAA A SCARY MONSTER AAAAAAA!")
